@@ -1,0 +1,6 @@
+[submodule "003 Code/client"]
+	path = 003 Code/client
+	url = https://github.com/eddhall0821/apollo-2021
+[submodule "003 Code/backend"]
+	path = 003 Code/backend
+	url = https://github.com/eddhall0821/movieql
