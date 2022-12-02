@@ -1,30 +1,35 @@
-# 한밭대학교 OOOO학과 ㅁㅁㅁㅁ팀
+# 한밭대학교 컴퓨터공학과 SAL팀
 
 **팀 구성**
-- 20XX0001 김이박 
-- 20XX0002 이박김
-- 20XX0003 박김이
 
-## <u>Teamate</u> Project Background
+- 20171606 김수민
+
+## SAL Project Background
+
 - ### 필요성
-  - OOO
-  - OOO
+
+  - 고성능 AI를 제작하기 위한 고품질의 AI 학습 데이터의 수요가 늘어감에 따라 데이터 라벨링 플랫폼 또한 증가하고 있지만, 대부분의 데이터 라벨링은 라벨링 작업자에게 의지하는 것이 현황이다. 작업자의 주관이 섞인 데이터는 같은 데이터를 라벨링 하더라도 오차가 발생할 수 밖에 없다. 또 라벨링 데이터의 종류에 따라 해당 분야의 전문 지식이 필요할 수도 있다.
+
 - ### 기존 해결책의 문제점
-  - OOO
-  - OOO
-  
+
+  - 기존의 데이터 라벨링의 경우 사람이 전체 데이터를 직접 라벨링 해야 하므로 불필요한 반복 작업이 필요하다. 데이터에 라벨을 지정하는 일은 지루하고 오류가 발생하기 쉬운 작업이다. 이러한 기존의 데이터 라벨링의 사용성을 개선하기 위해 AI를 통해 데이터를 먼저 학습시키고 학습시킨 데이터를 기반으로 이미지의 라벨링을 보조하는 플랫폼 개발을 목표로 한다.
+
 ## System Design
-  - ### System Requirements
-    - OOO
-    - OOO
-    
+
+- ### System Requirements
+  - front-end -> react, apollo
+  - back-end -> nodejs, graphQL
+  - database -> mongoDB
+  - OCR engine -> tesseract
+
 ## Case Study
-  - ### Description
-  
-  
+
+- Desmond, Michael, et al. "Semi-automated data labeling." NeurIPS 2020 Competition and Demonstration Track. PMLR, 2021.
+
+- Cruz-Sandoval, Dagoberto, et al. "Semi-automated data labeling for activity recognition in pervasive healthcare." Sensors 19.14 (2019): 3035.
+
 ## Conclusion
-  - ### OOO
-  - ### OOO
-  
-## Project Outcome
-- ### 20XX 년 OO학술대회 
+
+- 기존의 데이터 라벨링은 데이터 수집이나, AI를 통해 라벨링 되지 않은 데이터를 사람이 직접 라벨링 하는 간단한 형태의 데이터 처리를 제공한다. 이번 과제의 결과물에선 수집한 데이터를 모델에 학습시키고, 학습한 모델을 라벨링 플랫폼에 탑재하여 데이터 수집부터 활용에 이르는 모든 단계의 서비스를 제공한다. 기존 데이터 라벨링 플랫폼은 데이터 수요 기업으로부터 제공 받는 금액의 많은 부분을 데이터 수집, 가공에 필요한 인건비에 사용하고 있다. 또 신규 작업자들을 교육시키기 위해 온라인 교육과 대면 교육을 병행하고 있고 이 또한 비용 손실로 이어진다. 뿐만 아니라 전문성이 필요한 의료용 데이터 등의 가공은 고품질의 가공 데이터 수요에 비해 공급 데이터의 수가 턱없이 부족한 것이 현실이다.
+
+- 이러한 기존의 데이터 라벨링의 단점을 보완하여 AI를 통해 먼저 학습된 데이터를 기반으로 라벨링을 보조한다면 라벨링을 할 때 인간의 노력을 최소화할 수 있다. 기존보다 적은 양의 작업자를 필요로 하기 때문에 작업자의 인건비도 적어진다. 또 의료용 데이터와 같이 전문성이 필요한 데이터 라벨링의 경우에 적은 수의 작업자들로 많은 양의 가공 데이터를 생성할 수 있을 것으로 기대된다.
